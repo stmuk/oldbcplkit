@@ -1,4 +1,4 @@
-CFLAGS		= -std=c89 -g -m32
+CFLAGS		= -std=c89 -g -w -m32
 
 icint:		icint.o interp.o sub.o
 		$(CC) $(LDFLAGS) $(CFLAGS) -o $@ icint.o interp.o sub.o
@@ -14,5 +14,5 @@ clean:
 
 # XXX fails
 test:
-	./icint fact.int
-	./icint cg.int
+	./icint -v fact.int
+	./icint -v cg.int

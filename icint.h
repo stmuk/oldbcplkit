@@ -32,7 +32,7 @@ EXT int	stdin, stdout, stderr;
 #endif
 
 /* fundamental constants */
-#define	CHARWORDBITS	16
+#define	CHARWORDBITS 32	
 #define	BYTESIZE	8
 #define	MAXFN		16		/* max length of filenames */
 
